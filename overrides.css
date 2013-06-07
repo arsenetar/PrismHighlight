@@ -1,0 +1,4 @@
+/* Stop Mediawiki from changing the background of code tags */
+@media screen{
+ code{ background: inherit !important;}
+} 
