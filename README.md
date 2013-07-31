@@ -5,21 +5,21 @@ PrismHighlight
 Installation
 -------------
 To install the extension clone the source into your extensions directory:
-~~~
+~~~bash
 cd /path/to/wiki/extensions
 git clone https://github.com/arsenetar/PrismHighlight.git 
 ~~~
 Alternatively you may download the source via [zip](https://github.com/arsenetar/PrismHighlight/archive/master.zip).
 
 To activate the extension open your `LocalSettings.php` file and add the following:
-~~~
+~~~php
 require_once("$IP/extensions/PrismHighlight/PrismHighlight.php");
 ~~~
 
 Configuration
 --------------
 The following are the configuration options for the `Localsettings.php` file ( defaults shown ):
-~~~
+~~~php
 /**
  * Theme to use
  * options: dark, funky, okaidia, tomoorrow, twilight, false ( default )
@@ -61,7 +61,7 @@ $wgPrismHighlightLanguages = array(
 Use
 ----
 To use the syntax highlighter in wiki markup create the following:
-~~~
+~~~html
 <source>
  //[...]
 </source>
@@ -76,7 +76,7 @@ Now the following parameters may be passed to the `<source>` tag:
 - `line-numbers` - used as a flag to specify line numbers should be used
 
 ### Example
-~~~
+~~~html
 <source lang=php data-start=29 line-numbers>
     foreach( $args as $key => $value ){
         switch ($key) {
