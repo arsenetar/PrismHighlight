@@ -14,7 +14,7 @@ if ( ! defined( 'MEDIAWIKI' ) )
  */
 
 /**
- * Implements the AuthPlugin for the SimpleSSO extension
+ * Implements the Prismjs code highlighting extension
  * 
  * @author Andrew Senetar
  */
