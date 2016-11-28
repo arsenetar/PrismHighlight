@@ -24,7 +24,7 @@ if ( ! defined( 'MEDIAWIKI' ) )
     public static function parserHook($text, $args = array(), $parser) {
         $code_classes = '';
         $pre_args ='';
-        if(!isset($args['lang']) || !isset($args['language']))
+        if(!isset($args['lang']) && !isset($args['language']))
             $args['lang'] = 'markup';
         foreach( $args as $key => $value ){
             switch ($key) {
